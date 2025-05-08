@@ -1,0 +1,228 @@
+/* DC Eviction Infographic Styles */
+
+/* Base styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+h1 {
+    font-size: 2.8rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    color: #555;
+    font-weight: 300;
+}
+
+/* Section styling */
+.section {
+    margin-bottom: 60px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #0066cc;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Visualization containers */
+.visualization {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.visualization img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.visualization-caption {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Methodology section */
+.methodology {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 40px;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: #fffde7;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+/* Flexible layout */
+.flex-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1 1 400px;
+}
+
+/* Optional color classes for visualizations */
+.viz-background-1 {
+    background-color: #f7fbff;
+}
+
+.viz-background-2 {
+    background-color: #f5f5f5;
+}
+
+.viz-background-3 {
+    background-color: #fff8e1;
+}
+
+/* Flourish embed styling */
+.flourish-container {
+    width: 95%;
+    max-width: 1100px;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    overflow: visible; /* Changed from hidden to allow visualizations to expand if needed */
+}
+
+.flourish-embed {
+    width: 100%;
+    height: 650px; /* Increased default height */
+}
+
+/* Different sizes for flexibility */
+.flourish-small {
+    width: 90%;
+    max-width: 900px;
+    height: 500px;
+}
+
+.flourish-medium {
+    width: 95%;
+    max-width: 1000px;
+    height: 600px;
+}
+
+.flourish-large {
+    width: 100%;
+    max-width: 1150px;
+    height: 700px;
+}
+
+/* Custom size for map (75% of large) */
+.flourish-map {
+    width: 90%;
+    max-width: 900px;
+    height: 525px; /* 75% of 700px */
+    margin: 0 auto !important;
+    display: block !important;
+    position: static !important;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section {
+        padding: 20px;
+    }
+    
+    .flex-container {
+        flex-direction: column;
+    }
+    
+    .flourish-container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        overflow-x: auto; /* Allow horizontal scrolling if needed */
+    }
+    
+    .flourish-small, 
+    .flourish-medium, 
+    .flourish-large {
+        width: 100%;
+        height: 450px; /* Increased mobile height */
+    }
+    
+    /* Mobile map adjustments */
+    .map-wrapper {
+        height: 450px;
+        max-width: 100%;
+    }
+}
+
+/* Extra large screens */
+@media (min-width: 1400px) {
+    .flourish-container {
+        max-width: 1300px;
+    }
+    
+    .flourish-large {
+        height: 800px; /* Even larger for big screens */
+    }
+}
